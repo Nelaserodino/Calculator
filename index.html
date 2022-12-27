@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <script src="./js/calculadora.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex">
+        <div class="marca-panel">
+          <p class="marca">CASIO</p>
+          <img
+            class="panel"
+            src="./imagen/Captura de pantalla 2022-11-09 a las 12.45.03.png"
+            alt=""
+          />
+        </div>
+        <section class="pantalla">
+          <input type="text" id="screen" disabled value="" />
+        </section>
+      </div>
+
+      <section class="numeros">
+        <div class="fila">
+          <input type="button" value="7" onclick="addScreen('7')" />
+          <input type="button" value="8" onclick="addScreen('8')" />
+          <input type="button" value="9" onclick="addScreen('9')" />
+          <input type="button" value="➗" onclick="addScreen('/')" />
+        </div>
+        <div class="fila">
+          <input type="button" value="4" onclick="addScreen('4')" />
+          <input type="button" value="5" onclick="addScreen('5')" />
+          <input type="button" value="6" onclick="addScreen('6')" />
+          <input type="button" value="✖️" onclick="addScreen('*')" />
+        </div>
+        <div class="fila">
+          <input type="button" value="1" onclick="addScreen('1')" />
+          <input type="button" value="2" onclick="addScreen('2')" />
+          <input type="button" value="3" onclick="addScreen('3')" />
+          <input type="button" value="➖" onclick="addScreen('-')" />
+        </div>
+
+        <div class="fila">
+          <input id="boton-c" type="button" value="C" onclick="clearScreen()" />
+          <input type="button" value="0" onclick="addScreen('0')" />
+          <input type="button" value="=" onclick="calculate()" />
+          <input type="button" value="➕" onclick="addScreen('+')" />
+        </div>
+      </section>
+    </div>
+    <div>
+      <p class="footer">
+        Marianela Serodino. <br />
+        HTML, CSS, Javascript
+      </p>
+    </div>
+  </body>
+</html>
